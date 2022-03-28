@@ -8,18 +8,19 @@
 
 buildGo117Module rec {
   pname = "oc";
-  version = "2125bdfd968c8eaf97e11ae93f8493e1602de5ef";
+  # oc adm release info 4.10.5 --output=json | jq -r '.references.spec.tags[] | select (.name=="cli") | .annotations."io.openshift.build.commit.id"'
+  version = "6db43e22ecffd58dbd1cfb3b245967bde98f9a66";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "oc";
     rev = "${version}";
-    sha256 = "sha256-AgQXG44yCPmtbGNpJ99IicTnyGxgrsLLCRvvNgavs9A=";
+    sha256 = "sha256-tf0clu7Kz9VJb7GSkhDBvskeyedtV1SynarJYjtNFAw=";
   };
 
   ldflags = [
     "-s" "-w"
-    "-X github.com/openshift/oc/pkg/version.versionFromGit=${version}"
+    "-X github.com/openshift/oc/pkg/version.versionFromGit=4.10.5"
   ];
 
   tags = [
@@ -32,7 +33,6 @@ buildGo117Module rec {
     gpgme
     libassuan
     libkrb5
-    clang
   ];
 
   subPackages = [ "cmd/oc" ];
