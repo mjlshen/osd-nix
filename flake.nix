@@ -6,16 +6,18 @@
 
   outputs = { self, nixpkgs, flake-utils }:
     let
-      overlay = final: prev: (import ./nix/overlay.nix) final prev;
+      localOverlay = import ./nix/overlay.nix;
+      overlays = [ localOverlay ];
     in flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {
-          inherit system;
-          overlays = [ overlay ];
+          inherit system overlays;
         };
       in {
         legacyPackages = pkgs;
         inherit (pkgs) devShell;
       }
-    );
+    ) // {
+      overlay = localOverlay;
+    };
 }
