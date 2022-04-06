@@ -5,6 +5,7 @@
 , oc
 , ocm
 , osdctl
+, pd
 }:
 
 mkShell rec {
@@ -15,5 +16,6 @@ mkShell rec {
     oc
     ocm
     osdctl
+    pd
   ];
 }
