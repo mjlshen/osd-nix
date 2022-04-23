@@ -8,19 +8,19 @@
 
 buildGo117Module rec {
   pname = "oc";
-  # oc adm release info 4.10.5 --output=json | jq -r '.references.spec.tags[] | select (.name=="cli") | .annotations."io.openshift.build.commit.id"'
-  version = "6db43e22ecffd58dbd1cfb3b245967bde98f9a66";
+  # oc adm release info 4.10.10 --output=json | jq -r '.references.spec.tags[] | select (.name=="cli") | .annotations."io.openshift.build.commit.id"'
+  version = "3e24949fea37244367d50a1f3a226ec20d51eef1";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "oc";
     rev = "${version}";
-    sha256 = "sha256-tf0clu7Kz9VJb7GSkhDBvskeyedtV1SynarJYjtNFAw=";
+    sha256 = "sha256-ruPw14kwIaGN5EDWH5NHgNYdt9jpBmQTc7VITaFgYXA=";
   };
 
   ldflags = [
     "-s" "-w"
-    "-X github.com/openshift/oc/pkg/version.versionFromGit=4.10.5"
+    "-X github.com/openshift/oc/pkg/version.versionFromGit=4.10.10"
   ];
 
   tags = [
