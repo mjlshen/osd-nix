@@ -4,6 +4,7 @@
 , hiveutil
 , oc
 , ocm
+, operator-sdk
 , osdctl
 , pd
 }:
@@ -15,6 +16,7 @@ mkShell rec {
     hiveutil
     oc
     ocm
+    operator-sdk
     osdctl
     pd
   ];
