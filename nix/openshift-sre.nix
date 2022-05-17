@@ -8,6 +8,7 @@
 , operator-sdk
 , osdctl
 , pd
+, rosa
 }:
 
 mkShell rec {
@@ -21,5 +22,6 @@ mkShell rec {
     operator-sdk
     osdctl
     pd
+    rosa
   ];
 }
