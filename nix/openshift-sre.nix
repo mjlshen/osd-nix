@@ -5,7 +5,6 @@
 , hiveutil
 , oc
 , ocm
-, operator-sdk
 , osdctl
 , pd
 , rosa
@@ -19,7 +18,6 @@ mkShell rec {
     hiveutil
     oc
     ocm
-    operator-sdk
     osdctl
     pd
     rosa
