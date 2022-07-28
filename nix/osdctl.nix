@@ -2,13 +2,13 @@
 
 buildGoModule rec {
   pname = "osdctl";
-  version = "0.9.6";
+  version = "0.10.0";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "osdctl";
     rev = "v${version}";
-    sha256 = "sha256-n0jJT75Mp2WFilTgkSUaskUuuju1zVp4Y4EFQvGMNcA=";
+    sha256 = "sha256-J8uYPMwuaKP+4s6hlfR88Pwt5g1JdSDMa9+NS7/eKSA=";
   };
 
   ldflags = [
