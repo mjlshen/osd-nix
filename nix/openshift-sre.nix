@@ -1,7 +1,5 @@
 { mkShell
-, awscli2
-, go_1_17
-, google-cloud-sdk
+, hypershift
 , oc
 , ocm
 , osdctl
@@ -11,9 +9,7 @@
 
 mkShell rec {
   packages = [
-    awscli2
-    google-cloud-sdk
-    go_1_17
+    hypershift
     oc
     ocm
     osdctl
