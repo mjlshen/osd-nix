@@ -1,6 +1,6 @@
 # osd-nix
 
-This repository is a Nix flake containing tools needed as an OpenShift Dedicated SRE. This workflow allows strandard tooling and versions to be available while on-call without forcing these to clash with other versions that are installed.
+This repository is a Nix flake containing tools needed as an OpenShift Dedicated SRE. This workflow allows standard tooling and versions to be available while on-call without forcing these to clash with other versions that are installed.
 
 ## Prerequisites
 
