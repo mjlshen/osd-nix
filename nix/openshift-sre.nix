@@ -3,7 +3,6 @@
 , oc
 , ocm
 , osdctl
-, pd
 , rosa
 }:
 
@@ -13,7 +12,6 @@ mkShell rec {
     oc
     ocm
     osdctl
-    pd
     rosa
   ];
 }
