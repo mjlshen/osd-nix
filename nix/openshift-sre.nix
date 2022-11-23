@@ -1,4 +1,5 @@
 { mkShell
+, google-cloud-sdk
 , hypershift
 , oc
 , ocm
@@ -8,6 +9,7 @@
 
 mkShell rec {
   packages = [
+    google-cloud-sdk
     hypershift
     oc
     ocm
