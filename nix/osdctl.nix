@@ -1,6 +1,6 @@
-{ buildGoModule, fetchFromGitHub }:
+{ buildGo118Module, fetchFromGitHub }:
 
-buildGoModule rec {
+buildGo118Module rec {
   pname = "osdctl";
   version = "0.13.4";
 

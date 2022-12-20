@@ -1,6 +1,6 @@
-{ buildGoModule, fetchFromGitHub }:
+{ buildGo118Module, fetchFromGitHub }:
 
-buildGoModule rec {
+buildGo118Module rec {
   pname = "ocm";
   version = "0.1.65";
 
