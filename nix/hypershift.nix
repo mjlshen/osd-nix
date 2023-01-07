@@ -2,13 +2,13 @@
 
 buildGo118Module rec {
   pname = "hypershift";
-  version = "4.11";
+  version = "4.12";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "hypershift";
     rev = "release-${version}";
-    sha256 = "sha256-NLJIvJMyRwT/FST1KDt/FdpylxxjCM7nWM78+GKq3Ss=";
+    sha256 = "sha256-M9q+OkWSvoK/yMNZ/MPU5s3kRehwVSw18lLLbH8lp9g=";
   };
 
   vendorSha256 = null;
