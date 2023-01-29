@@ -1,4 +1,4 @@
-{ buildGo118Module
+{ buildGo119Module
 , fetchFromGitHub
 , gpgme
 , libkrb5
@@ -6,21 +6,20 @@
 , clang
 }:
 
-buildGo118Module rec {
+buildGo119Module rec {
   pname = "oc";
-  # oc adm release info 4.11.0 --output=json | jq -r '.references.spec.tags[] | select (.name=="cli") | .annotations."io.openshift.build.commit.id"'
-  version = "70750898e45ff4a349995b08e1d64a359e4c4880";
+  version = "4.12";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "oc";
-    rev = "${version}";
-    sha256 = "sha256-sWVT+sCniXIgiQ60V+7sbIYQhF0b6GnymtHXEJ7sSDE=";
+    rev = "release-${version}";
+    sha256 = "sha256-GH3LjAeMIHmFbJoKGoeeNteP4Ma2+kIC5rAxObdziKg=";
   };
 
   ldflags = [
     "-s" "-w"
-    "-X github.com/openshift/oc/pkg/version.versionFromGit=4.11.0"
+    "-X github.com/openshift/oc/pkg/version.versionFromGit=${version}.0"
   ];
 
   tags = [
