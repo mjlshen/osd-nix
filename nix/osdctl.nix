@@ -11,11 +11,11 @@ buildGo118Module rec {
     sha256 = "sha256-4ltA0fpnLz1/6zYrkF6MZqioTmQBqmjcdjtgtWtQnzo=";
   };
 
-  buildFlags = "-trimpath";
+  CGO_ENABLED = 0;
 
   ldflags = [
     "-s" "-w"
-    "-X github.com/openshift/osdctl/cmd.Version=v${version}"
+    "-X github.com/openshift/osdctl/pkg/utils.Version=v${version}"
   ];
 
   vendorSha256 = "sha256-YeQROdHdm/BHNlN4M8TG3IOWVGqjqx/CxgtrnUmcbrk=";
