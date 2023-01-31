@@ -1,5 +1,6 @@
 final: prev: {
   hypershift = prev.callPackage ./hypershift.nix { };
+  mirrosa = prev.callPackage ./mirrosa.nix { };
   oc = prev.callPackage ./oc.nix { };
   ocm = prev.callPackage ./ocm.nix { };
   osdctl = prev.callPackage ./osdctl.nix { };

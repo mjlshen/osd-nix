@@ -1,6 +1,7 @@
 { mkShell
 , google-cloud-sdk
 , hypershift
+, mirrosa
 , oc
 , ocm
 , osdctl
@@ -14,6 +15,7 @@ mkShell rec {
     oc
     ocm
     osdctl
+    mirrosa
     rosa
   ];
 }
