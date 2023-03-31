@@ -2,13 +2,13 @@
 
 buildGo119Module rec {
   pname = "mirrosa";
-  version = "0.0.2";
+  version = "0.0.4";
 
   src = fetchFromGitHub {
     owner = "mjlshen";
     repo = "mirrosa";
     rev = "v${version}";
-    sha256 = "sha256-7wGC4TYTs+aCCxGpKbJbDPZu2AVg7aCgyyVpR6g9JLA=";
+    sha256 = "sha256-3hwQxXc3R1qk8alVlY/xuoSZjThrnNn2P+YnmaSLWNE=";
   };
 
   CGO_ENABLED = 0;
@@ -17,5 +17,5 @@ buildGo119Module rec {
     "-s" "-w"
   ];
 
-  vendorSha256 = "sha256-1T6bH4wwLEEjjLrnwkewFh36FXyljEz4xSt0M7ceyWE=";
+  vendorSha256 = "sha256-4pmBYoVqWTu29JI9QIrofbuEMmFhnIluS2OENan7wmA=";
 }
