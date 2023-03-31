@@ -4,6 +4,7 @@
 , mirrosa
 , oc
 , ocm
+, ocm-backplane
 , osdctl
 , rosa
 }:
@@ -14,6 +15,7 @@ mkShell rec {
     hypershift
     oc
     ocm
+    ocm-backplane
     osdctl
     mirrosa
     rosa
