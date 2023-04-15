@@ -2,13 +2,13 @@
 
 buildGo118Module rec {
   pname = "backplane-cli";
-  version = "0.1.1";
+  version = "0.1.2";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "backplane-cli";
     rev = "v${version}";
-    sha256 = "sha256-YcNEW40IHWd77320ruXraA/RaJ4NMfeRVhGR6ZDystA=";
+    sha256 = "sha256-wzEQxbx9gTRENmh6Fc5+AmrThBx1F3qHGv9c2AJ2mV4=";
   };
 
   CGO_ENABLED = 0;
