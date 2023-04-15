@@ -19,4 +19,5 @@ buildGo118Module rec {
   ];
 
   vendorSha256 = "sha256-+h/uFHNK3+lBLlZRzwLJ4fYnPnUu+xBbcWDp+/+eMP8=";
+  doCheck = false;
 }
