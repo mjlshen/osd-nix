@@ -8,7 +8,7 @@ buildGo118Module rec {
     owner = "openshift";
     repo = "hypershift";
     rev = "release-${version}";
-    sha256 = "sha256-HQ5NpHS2NJ6PvF+XZSmCh58kzxF3/h9UwuK0LKgYDmY=";
+    sha256 = "sha256-DP4wbhzlwFNG7VsJ2Jx2xPd4sZTQUh6jhVoVtJ6djes=";
   };
 
   vendorSha256 = null;

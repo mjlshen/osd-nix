@@ -14,7 +14,7 @@ buildGo119Module rec {
     owner = "openshift";
     repo = "oc";
     rev = "release-${version}";
-    sha256 = "sha256-TpX9k5BsU1zN6WbtnERrmrJvWSo+DIUHRuiGU846dxg=";
+    sha256 = "sha256-DU38ZJ9ZJS89bTONLB43gMIeM4m6w+1YcUoAwjITPXE=";
   };
 
   ldflags = [
