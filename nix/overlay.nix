@@ -6,6 +6,7 @@ final: prev: {
   ocm-backplane = prev.callPackage ./ocm-backplane.nix { };
   osdctl = prev.callPackage ./osdctl.nix { };
   rosa = prev.callPackage ./rosa.nix { };
+  static-kas = prev.callPackage ./static-kas.nix { };
 
   devShell = final.callPackage ./openshift-sre.nix { };
 }

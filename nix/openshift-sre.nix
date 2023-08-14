@@ -7,6 +7,7 @@
 , ocm-backplane
 , osdctl
 , rosa
+, static-kas
 }:
 
 mkShell rec {
@@ -19,5 +20,6 @@ mkShell rec {
     osdctl
     mirrosa
     rosa
+    static-kas
   ];
 }
