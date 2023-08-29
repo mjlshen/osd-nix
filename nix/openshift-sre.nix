@@ -1,5 +1,4 @@
 { mkShell
-, google-cloud-sdk
 , hypershift
 , mirrosa
 , oc
@@ -12,7 +11,6 @@
 
 mkShell rec {
   packages = [
-    google-cloud-sdk
     hypershift
     oc
     ocm
