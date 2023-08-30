@@ -1,7 +1,6 @@
-{
-buildGo119Module, fetchFromGitHub }:
+{ buildGo120Module, fetchFromGitHub }:
 
-buildGo119Module rec {
+buildGo120Module rec {
   pname = "rosa";
   version = "v1.2.25";
 
