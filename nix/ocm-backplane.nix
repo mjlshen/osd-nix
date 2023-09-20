@@ -1,6 +1,6 @@
-{ buildGo119Module, fetchFromGitHub }:
+{ buildGo121Module, fetchFromGitHub }:
 
-buildGo119Module rec {
+buildGo121Module rec {
   pname = "backplane-cli";
   version = "0.1.11";
 
