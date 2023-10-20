@@ -2,13 +2,13 @@
 
 buildGo120Module rec {
   pname = "rosa";
-  version = "v1.2.26";
+  version = "v1.2.28";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "rosa";
     rev = "${version}";
-    sha256 = "sha256-EKUeK+Tm/yjKTw8Kw4ReL8rIfLtXzaLRetz05RAdXHo=";
+    sha256 = "sha256-Ndwbu8dNHdLQFZk3S1ikN6lWLxFzALlrtsXEepPvy+M=";
   };
 
   CGO_ENABLED = 0;
