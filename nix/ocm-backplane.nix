@@ -2,13 +2,13 @@
 
 buildGo121Module rec {
   pname = "backplane-cli";
-  version = "0.1.12";
+  version = "0.1.14";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "backplane-cli";
     rev = "v${version}";
-    sha256 = "sha256-NL6XMun/zlf069/BLVPKj2q3xbnqhjl8Q4mbjGUXZJk=";
+    sha256 = "sha256-oaUfQZ2msF1dGkNTX7vy+t/3dmt5rt3IGOmWl/IERC4=";
   };
 
   CGO_ENABLED = 0;
@@ -19,7 +19,7 @@ buildGo121Module rec {
     "-X github.com/openshift/backplane-cli/pkg/info.Version=${version}"
   ];
 
-  vendorSha256 = "sha256-v7D+YKYlCOajE2t7KOC8Eqd1ZCqBjjmoeZ8CCoXjSuA=";
+  vendorSha256 = "sha256-VbVCVmiYdv5+gpsGopOY5TpyoJq8jUkqW5kJYAilHXs=";
 
   subPackages = [ "cmd/ocm-backplane" ];
 }
