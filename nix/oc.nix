@@ -8,13 +8,13 @@
 
 buildGo120Module rec {
   pname = "oc";
-  version = "4.14";
+  version = "4.15";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "oc";
     rev = "release-${version}";
-    sha256 = "sha256-2/Unqlg/XOjXdIloDaumQyHdcwzHnAqNwdCjHy5RAWw=";
+    sha256 = "sha256-hOJn3azO+0hw1a08wgNS31f3n9mah12wlshxpjGDAqE=";
   };
 
   ldflags = [
