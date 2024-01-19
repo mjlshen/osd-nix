@@ -2,13 +2,13 @@
 
 buildGoModule rec {
   pname = "static-kas";
-  version = "e5b1ae53afe5bc6cf279f91e985aecfe19590804";
+  version = "765cd94436b832298af92a9c1749e7c4fe923406";
 
   src = fetchFromGitHub {
     owner = "alvaroaleman";
     repo = "static-kas";
-    rev = "e5b1ae53afe5bc6cf279f91e985aecfe19590804";
-    sha256 = "sha256-XCKoDDtaotcWFPQqGfUdzeTAv6GO0qIxXkSC+kJGiak=";
+    rev = "765cd94436b832298af92a9c1749e7c4fe923406";
+    sha256 = "sha256-+X1+BastDxnHefDFQBO1yAkDH6CVREUnRxjgsS4qcj0=";
   };
 
   CGO_ENABLED = 0;
@@ -17,7 +17,7 @@ buildGoModule rec {
     "-s" "-w"
   ];
 
-  vendorSha256 = "sha256-WJbR8D2YIwxSvMiy4KgfMvmEbjanh/9Eyedfj94I/p8=";
+  vendorSha256 = "sha256-dpRTWIDLRNesJY5oDfDQBlL2mU0krjtMGqWGeZdMZqk=";
 
   # Rename binary to static-kas
   postInstall = ''
