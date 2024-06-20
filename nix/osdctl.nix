@@ -2,13 +2,13 @@
 
 buildGo121Module rec {
   pname = "osdctl";
-  version = "0.32.0";
+  version = "0.33.0";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "osdctl";
     rev = "v${version}";
-    sha256 = "sha256-RhQNilstgnDJdOIqOmKSsp5MnOAmTsXJVp80OFVC8/s=";
+    sha256 = "sha256-reczchG0mU7VxPbqFm8Q35kmad/1qzyeyrSNq/+adjo=";
   };
 
   CGO_ENABLED = 0;
@@ -18,6 +18,6 @@ buildGo121Module rec {
     "-X github.com/openshift/osdctl/pkg/utils.Version=${version}"
   ];
 
-  vendorSha256 = "sha256-Vz7WmmxcS7agoqjVVtFvx6jTKuBVzu2AUCnTBR0Xcws=";
+  vendorSha256 = "sha256-Ks98y1CZZky6g9AhuO34w+ktnHGUkzB7DoFSr9iabiQ=";
   doCheck = false;
 }
