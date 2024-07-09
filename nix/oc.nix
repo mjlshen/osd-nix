@@ -1,4 +1,4 @@
-{ buildGo120Module
+{ buildGo121Module
 , fetchFromGitHub
 , gpgme
 , libkrb5
@@ -6,15 +6,15 @@
 , clang
 }:
 
-buildGo120Module rec {
+buildGo121Module rec {
   pname = "oc";
-  version = "4.15";
+  version = "4.16";
 
   src = fetchFromGitHub {
     owner = "openshift";
     repo = "oc";
     rev = "release-${version}";
-    sha256 = "sha256-WgR9te7uHq6wJyeJUWDYk+mkNON7P0c+LkZCKtHatJo=";
+    sha256 = "sha256-zHgGid36JCMIYmsfWQ7pUWZQTyBowRjt5GLQNmFlNDY=";
   };
 
   ldflags = [
