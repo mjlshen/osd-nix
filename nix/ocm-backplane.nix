@@ -19,7 +19,7 @@ buildGo121Module rec {
     "-X github.com/openshift/backplane-cli/pkg/info.Version=${version}"
   ];
 
-  vendorSha256 = "sha256-K4+4b9mwSuGU/gHK+o6RZzDW+9jQMF1DyRugYq2A6ss=";
+  vendorHash = "sha256-K4+4b9mwSuGU/gHK+o6RZzDW+9jQMF1DyRugYq2A6ss=";
 
   subPackages = [ "cmd/ocm-backplane" ];
 }

@@ -1,6 +1,6 @@
-{ buildGo121Module, fetchFromGitHub }:
+{ buildGo122Module, fetchFromGitHub }:
 
-buildGo121Module rec {
+buildGo122Module rec {
   pname = "mirrosa";
   version = "0.0.9";
 
@@ -17,5 +17,5 @@ buildGo121Module rec {
     "-s" "-w"
   ];
 
-  vendorSha256 = "sha256-OdyIBE7/jCQvNw0sZ2qubVPSTFct2bmiOwrX5YaosuQ=";
+  vendorHash = "sha256-OdyIBE7/jCQvNw0sZ2qubVPSTFct2bmiOwrX5YaosuQ=";
 }

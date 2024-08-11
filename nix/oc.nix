@@ -26,7 +26,7 @@ buildGo121Module rec {
     "include_gcs" "include_oss" "containers_image_openpgp"
   ];
 
-  vendorSha256 = null;
+  vendorHash = null;
 
   buildInputs = [
     gpgme

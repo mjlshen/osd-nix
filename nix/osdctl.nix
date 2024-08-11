@@ -18,6 +18,6 @@ buildGo121Module rec {
     "-X github.com/openshift/osdctl/pkg/utils.Version=${version}"
   ];
 
-  vendorSha256 = "sha256-OlhLkJIVLz9hAWFEXFsCxcxUyDmzZOubQ5Hb8SqrZKw=";
+  vendorHash = "sha256-OlhLkJIVLz9hAWFEXFsCxcxUyDmzZOubQ5Hb8SqrZKw=";
   doCheck = false;
 }

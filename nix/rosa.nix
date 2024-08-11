@@ -16,7 +16,7 @@ buildGo121Module rec {
     "-s" "-w"
   ];
 
-  vendorSha256 = null;
+  vendorHash = null;
   doCheck = false;
 
   subPackages = [ "cmd/rosa" ];

@@ -1,6 +1,6 @@
-{ buildGo120Module, fetchFromGitHub }:
+{ buildGo122Module, fetchFromGitHub }:
 
-buildGo120Module rec {
+buildGo122Module rec {
   pname = "ocm";
   version = "0.1.75";
 
@@ -15,7 +15,7 @@ buildGo120Module rec {
     "-s" "-w"
   ];
 
-  vendorSha256 = "sha256-ghhEphMjJz6ztGnaA6ajXxvMAKJOBcGcdQvEvX/xIi0=";
+  vendorHash = "sha256-ghhEphMjJz6ztGnaA6ajXxvMAKJOBcGcdQvEvX/xIi0=";
 
   subPackages = [ "cmd/ocm" ];
 }

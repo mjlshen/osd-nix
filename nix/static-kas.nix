@@ -1,6 +1,6 @@
-{ buildGoModule, fetchFromGitHub }:
+{ buildGo122Module, fetchFromGitHub }:
 
-buildGoModule rec {
+buildGo122Module rec {
   pname = "static-kas";
   version = "765cd94436b832298af92a9c1749e7c4fe923406";
 
@@ -17,7 +17,7 @@ buildGoModule rec {
     "-s" "-w"
   ];
 
-  vendorSha256 = "sha256-dpRTWIDLRNesJY5oDfDQBlL2mU0krjtMGqWGeZdMZqk=";
+  vendorHash = "sha256-dpRTWIDLRNesJY5oDfDQBlL2mU0krjtMGqWGeZdMZqk=";
 
   # Rename binary to static-kas
   postInstall = ''
