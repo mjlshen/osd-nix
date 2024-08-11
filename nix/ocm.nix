@@ -1,21 +1,21 @@
-{ buildGo118Module, fetchFromGitHub }:
+{ buildGo120Module, fetchFromGitHub }:
 
-buildGo118Module rec {
+buildGo120Module rec {
   pname = "ocm";
-  version = "0.1.74";
+  version = "0.1.75";
 
   src = fetchFromGitHub {
     owner = "openshift-online";
     repo = "ocm-cli";
     rev = "v${version}";
-    sha256 = "sha256-sORCttAeLmC1Ab4LmdQaYHA9nWDx+pN6rcts+xVHXFY=";
+    sha256 = "sha256-ckAj0iMl0e2iNpEoR3HF00HzxQHG2afJ1JQ6rqiXwZQ=";
   };
 
   ldflags = [
     "-s" "-w"
   ];
 
-  vendorSha256 = "sha256-hYNSOzXgXwNTwJywPyFktDp5NA1ROKZtSjMsDdz7nSg=";
+  vendorSha256 = "sha256-ghhEphMjJz6ztGnaA6ajXxvMAKJOBcGcdQvEvX/xIi0=";
 
   subPackages = [ "cmd/ocm" ];
 }
