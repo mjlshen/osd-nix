@@ -1,7 +1,7 @@
 {
   description = "RedHat OpenShift Dedicated SRE Flake";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-24.05";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
   outputs = { self, nixpkgs, flake-utils }:

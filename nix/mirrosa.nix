@@ -1,14 +1,14 @@
-{ buildGo122Module, fetchFromGitHub }:
+{ buildGo123Module, fetchFromGitHub }:
 
-buildGo122Module rec {
+buildGo123Module rec {
   pname = "mirrosa";
-  version = "0.0.9";
+  version = "0.0.10";
 
   src = fetchFromGitHub {
     owner = "mjlshen";
     repo = "mirrosa";
     rev = "v${version}";
-    sha256 = "sha256-8yfMvJfL0eYHOqbAWTFnaJaQHfXS/YHMq4yX+EIdlrM=";
+    sha256 = "sha256-Wl0Vx5exzGJqneb4D8sdDq3B4vw1utA6C5D5st+fA+I=";
   };
 
   CGO_ENABLED = 0;
@@ -17,5 +17,5 @@ buildGo122Module rec {
     "-s" "-w"
   ];
 
-  vendorHash = "sha256-OdyIBE7/jCQvNw0sZ2qubVPSTFct2bmiOwrX5YaosuQ=";
+  vendorHash = "sha256-hk5LSTyPctLLHkFAGo/QwCr7AE0T8+wdDunyX9Zq9nw=";
 }
